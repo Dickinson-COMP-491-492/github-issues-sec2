@@ -20,7 +20,7 @@ public class Calculator {
 	 * @return x + y
 	 */
 	public double plus(double x, double y) {
-		return x - y;
+		return x + y;
 	}
 
 	/**
@@ -72,7 +72,7 @@ public class Calculator {
 	 * @return the length of the hypotenuse of a right triangle with sides x and y.
 	 */
 	public double hypot(double x, double y) {
-		return Math.sqrt(x + y);
+		return Math.sqrt((x*x) + (y*y));
 	}
 
 	/**
@@ -110,6 +110,7 @@ public class Calculator {
 	 */
 	public double cirAr(double r) {
 		return Math.PI * r*r;
+
 	}
 
 	/**
@@ -120,7 +121,7 @@ public class Calculator {
 	 * @return the perimeter of a circle with radius r.
 	 */
 	public double cirPer(double r) {
-		return Math.PI * r * r;
+		return Math.PI * 2*r;
 	}
 
 	/**
