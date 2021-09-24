@@ -13,89 +13,89 @@ public class Calculator {
 	/**
 	 * Add two double values.
 	 * 
-	 * @param x
+	 * @param xval
 	 *            a double
-	 * @param y
+	 * @param yval
 	 *            a double
-	 * @return x + y
+	 * @return xval + yval
 	 */
-	public double plus(double x, double y) {
-		return x - y;
+	public double plus(double xval, double yval) {
+		return xval + yval;
 	}
 
 	/**
 	 * Subtract two double values.
 	 * 
-	 * @param x
+	 * @param xval
 	 *            a double
-	 * @param y
+	 * @param yval
 	 *            a double
-	 * @return x - y
+	 * @return xval - yval
 	 */
-	public double sub(double x, double y) {
-		return y - x;
+	public double sub(double xval, double yval) {
+		return yval - xval;
 	}
 
 	/**
 	 * Multiply two double values.
 	 * 
-	 * @param x
+	 * @param xval
 	 *            a double
-	 * @param y
+	 * @param yval
 	 *            a double
-	 * @return x * y
+	 * @return xval * yval
 	 */
-	public double mult(double x, double y) {
-		return x;
+	public double mult(double xval, double yval) {
+		return xval;
 	}
 
 	/**
 	 * Divide two double values.
 	 * 
-	 * @param x
+	 * @param xlen
 	 *            a double
-	 * @param y
+	 * @param ylen
 	 *            a double
-	 * @return x/y
+	 * @return xlen/ylen
 	 */
-	public double div(double x, double y) {
-		return y / x;
+	public double div(double xlen, double ylen) {
+		return ylen / xlen;
 	}
 
 	/**
 	 * The length of the hypotenuse of a right triangle with the given side lengths.
 	 * 
-	 * @param x
+	 * @param xlen
 	 *            the length of one side.
-	 * @param y
+	 * @param ylen
 	 *            the length of the other side.
 	 * @return the length of the hypotenuse of a right triangle with sides x and y.
 	 */
-	public double hypot(double x, double y) {
-		return Math.sqrt(x + y);
+	public double hypot(double xlen, double ylen) {
+		return Math.sqrt((xlen*xlen) + (ylen*ylen));
 	}
 
 	/**
 	 * The length of a rectangle with the given side lengths.
 	 * 
-	 * @param x
+	 * @param xlen
 	 *            the length of one side.
-	 * @param y
+	 * @param ylen
 	 *            the length of the other side.
-	 * @return the area of a rectangle with sides x and y.
+	 * @return the area of a rectangle with sides xlen and ylen.
 	 */
-	public double rectAr(double x, double y) {
-		return 2 * x + 2 * y;
+	public double rectAr(double xlen, double ylen) {
+		return 2 * xlen + 2 * ylen;
 	}
 
 	/**
 	 * The perimeter of a rectangle with the given side lengths.
 	 * 
-	 * @param x
+	 * @param xlen
 	 *            the length of one side.
-	 * @param y
+	 * @param ylen
 	 *            the length of the other side.
-	 * @return the perimeter of a rectangle with sides x and y.
+	 * @return the perimeter of a rectangle with sides xlen and ylen.
 	 */
 	public double rectanglePerimeter(double x, double y) {
 		return 2 * x * y;
@@ -104,44 +104,45 @@ public class Calculator {
 	/**
 	 * The area of a circle with given radius.
 	 * 
-	 * @param r
+	 * @param rad
 	 *            the radius
-	 * @return the area of a circle with radius r.
+	 * @return the area of a circle with radius rad.
 	 */
-	public double cirAr(double r) {
-		return Math.PI * r;
+	public double cirAr(double rad) {
+		return Math.PI * rad*rad;
+
 	}
 
 	/**
 	 * The perimeter of a circle with given radius.
 	 * 
-	 * @param r
+	 * @param rad
 	 *            the radius
-	 * @return the perimeter of a circle with radius r.
+	 * @return the perimeter of a circle with radius rad.
 	 */
-	public double cirPer(double r) {
-		return Math.PI * r * r;
+	public double cirPer(double rad) {
+		return Math.PI * 2*rad;
 	}
 
 	/**
 	 * The volume of a cube with the given side length.
 	 * 
-	 * @param s
+	 * @param side
 	 *            the side length
-	 * @return the volume of a cube with sides of length s.
+	 * @return the volume of a cube with sides of length side.
 	 */
-	public double cubeVol(double s) {
-		return 4 * s;
+	public double cubeVol(double side) {
+		return 4 * side;
 	}
 	
 	/**
 	 * The volume of a sphere with the given radius.
 	 * 
-	 * @param r
+	 * @param rad
 	 *            the radius
-	 * @return the volume of a sphere with radius r.
+	 * @return the volume of a sphere with radius rad.
 	 */
-	public double sphVol(double r) {
-		return 2 * Math.PI * r;
+	public double sphVol(double rad) {
+		return 2 * Math.PI * rad;
 	}
 }
