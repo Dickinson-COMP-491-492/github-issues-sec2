@@ -97,8 +97,8 @@ public class Calculator {
 	 *            the length of the other side.
 	 * @return the perimeter of a rectangle with sides xlen and ylen.
 	 */
-	public double rectanglePerimeter(double x, double y) {
-		return 2 * x * y;
+	public double rectanglePerimeter(double xlen, double ylen) {
+		return 2 * xlen * ylen;
 	}
 
 	/**
