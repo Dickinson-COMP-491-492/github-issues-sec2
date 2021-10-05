@@ -46,7 +46,7 @@ public class Calculator {
 	 * @return xval * yval
 	 */
 	public double mult(double xval, double yval) {
-		return xval;
+		return xval*yval;
 	}
 
 	/**
